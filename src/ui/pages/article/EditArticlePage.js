@@ -34,7 +34,7 @@ export class EditArticlePage {
 
   async editTagField(tag) {
     await test.step(`Edit the 'Tag' field`, async () => {
-      await this.textField.fill(tag);
+      await this.tagField.fill(tag);
     });
   }
 

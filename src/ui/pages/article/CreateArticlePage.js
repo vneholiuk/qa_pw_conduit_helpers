@@ -53,7 +53,6 @@ export class CreateArticlePage {
       if (article.tags.length > 0) {
         for (const tag of article.tags) {
           await this.fillTagField(tag);
-          await this.page.keyboard.press('Enter');
         }
       }
 
